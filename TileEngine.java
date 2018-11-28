@@ -98,6 +98,7 @@ public class TileEngine {
             for (int x = 0; x < MAP_WIDTH; x++) {
                 // Nummer ophalen in de int array
                 int mapIcon = this.map[y][x];
+                
                 if (mapIcon == -1) {
                     continue;
                 }

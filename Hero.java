@@ -33,20 +33,44 @@ public class Hero extends Mover {
         for (Actor enemy : getIntersectingObjects(Enemy.class)) {
             if (enemy != null) {
                 getWorld().removeObject(this);
-                break;
+                return;
             }
         }
+        for (Actor LiquidWater : getIntersectingObjects(LiquidWater.class)){
+            if (LiquidWater != null) {
+                getWorld().removeObject(this);
+                return;
+            }
+        }
+                for (Actor CoinGold : getIntersectingObjects(CoinGold.class)){
+            if (CoinGold != null) {
+                getWorld().removeObject(CoinGold);
+                return;
+            }
+        }
+                        for (Actor Star : getIntersectingObjects(Star.class)){
+            if (Star != null) {
+                getWorld().removeObject(Star);
+                return;
+            }
+        }
+}
+        
+    public boolean opGrond()
+    {
+        Actor onder = getOneObjectAtOffset(0, getImage().getHeight()/2,Tile.class);
+        return onder != null;
+        
     }
-
     public void handleInput() {
-        if (Greenfoot.isKeyDown("w")) {
-            velocityY = -15;
+        if (Greenfoot.isKeyDown("up")&& opGrond()==true) {
+            velocityY = -20;
         }
 
-        if (Greenfoot.isKeyDown("a")) {
-            velocityX = -4;
-        } else if (Greenfoot.isKeyDown("d")) {
-            velocityX = 4;
+        if (Greenfoot.isKeyDown("left")) {
+            velocityX = -5;
+        } else if (Greenfoot.isKeyDown("right")) {
+            velocityX = 5;
         }
     }
 
