@@ -42,15 +42,21 @@ public class Hero extends Mover {
                 return;
             }
         }
-                for (Actor CoinGold : getIntersectingObjects(CoinGold.class)){
+        for (Actor CoinGold : getIntersectingObjects(CoinGold.class)){
             if (CoinGold != null) {
                 getWorld().removeObject(CoinGold);
                 return;
             }
         }
-                        for (Actor Star : getIntersectingObjects(Star.class)){
+        for (Actor Star : getIntersectingObjects(Star.class)){
             if (Star != null) {
                 getWorld().removeObject(Star);
+                return;
+            }
+        }
+        for (Actor Key : getIntersectingObjects(Key.class)){
+            if (Key != null) {
+                getWorld().removeObject(Key);
                 return;
             }
         }
