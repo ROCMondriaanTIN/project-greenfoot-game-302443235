@@ -117,8 +117,6 @@ public class MyWorld extends World {
         addObject(new CoinGold(), 10800, 1050);
         addObject(new CoinGold(), 11330, 1050);
         addObject(new CoinGold(), 11530, 1050);
-        
-        
         addObject(new CoinGold(), 11700, 850);
         addObject(new CoinGold(), 12000, 850);
         addObject(new CoinGold(), 12200, 1070);
@@ -126,9 +124,23 @@ public class MyWorld extends World {
         addObject(new CoinGold(), 12650, 850);
         addObject(new CoinGold(), 12600, 1050);
         addObject(new CoinGold(), 12950, 1050);
-        addObject(new CoinGold(), 13150, 850);
+        addObject(new CoinGold(), 13200, 850);
         addObject(new CoinGold(), 13400, 850);
-        addObject(new CoinGold(), 13600, 750);
+        addObject(new CoinGold(), 13550, 700);
+        addObject(new CoinGold(), 13750, 700);
+        addObject(new CoinGold(), 14050, 430);
+        addObject(new CoinGold(), 14220, 430);
+        addObject(new CoinGold(), 14350, 570);
+        addObject(new CoinGold(), 14550, 570);
+        addObject(new CoinGold(), 14750, 570);
+        addObject(new CoinGold(), 14930, 650);
+        addObject(new CoinGold(), 15300, 570);
+        addObject(new CoinGold(), 15600, 570);
+        addObject(new CoinGold(), 15830, 570);
+        addObject(new CoinGold(), 16150, 570);
+        addObject(new CoinGold(), 16680, 570);
+        addObject(new CoinGold(), 16900, 500);
+        
         
         addObject(new Key(), 11930, 1070);
         
@@ -136,6 +148,7 @@ public class MyWorld extends World {
             Star star = new Star();
         addObject( star, 1209, 1353);
         addObject(new Star(), 8900, 850);
+        addObject(new Star(), 13920, 550);
         
         // Force act zodat de camera op de juist plek staat.
         camera.act();
