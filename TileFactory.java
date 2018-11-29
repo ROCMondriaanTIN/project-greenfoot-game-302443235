@@ -267,7 +267,7 @@ public class TileFactory {
              tile.isSolid = true;
              break;
         case 64 :
-             tile = new Tile("ladderMid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile = new Tile("grassHalf_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
              tile.isSolid = true;
              break;
         case 65 :
