@@ -151,8 +151,8 @@ public class TileFactory {
              tile.isSolid = true;
              break;
         case 35 :
-             tile = new Tile("boxCoin.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
-             tile.isSolid = true;
+             tile = new Door("doorClosed_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT, 35);
+             tile.isSolid = false;
              break;
         case 36 :
              tile = new Tile("boxCoin_boxed.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
@@ -227,12 +227,12 @@ public class TileFactory {
              tile.isSolid = true;
              break;
         case 54 :
-             tile = new Tile("doorClosed_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
-             tile.isSolid = true;
+             tile = new Door("doorClosed_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT, 54);
+             tile.isSolid = false;
              break;
         case 55 :
              tile = new Tile("doorClosed_top.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
-             tile.isSolid = true;
+             tile.isSolid = false;
              break;
         case 56 :
              tile = new Tile("chain.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
@@ -264,7 +264,7 @@ public class TileFactory {
              break;
         case 63 :
              tile = new Tile("grass.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
-             tile.isSolid = true;
+             tile.isSolid = false;
              break;
         case 64 :
              tile = new Tile("grassHalf_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
@@ -275,16 +275,16 @@ public class TileFactory {
              tile.isSolid = true;
              break;
         case 66 :
-             tile = new Tile("lava.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
-             tile.isSolid = true;
+             tile = new Lava("lava.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile.isSolid = false;
              break;
         case 67 :
              tile = new Tile("lavaTop_high.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
-             tile.isSolid = true;
+             tile.isSolid = false;
              break;
         case 68 :
              tile = new Tile("lavaTop_low.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
-             tile.isSolid = true;
+             tile.isSolid = false;
              break;
         case 69 :
              tile = new Tile("leverLeft.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
@@ -335,23 +335,23 @@ public class TileFactory {
              tile.isSolid = true;
              break;
         case 81 :
-             tile = new Tile("signExit.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile = new Tile("boxCoin_disabled.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
              tile.isSolid = true;
              break;
         case 82 :
-             tile = new Tile("signLeft.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile = new Tile("snowHalf_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
              tile.isSolid = true;
              break;
         case 83 :
-             tile = new Tile("signRight.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
-             tile.isSolid = true;
+             tile = new Door("doorClosed_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT, 83);
+             tile.isSolid = false;
              break;
         case 84 :
              tile = new Tile("snow.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
              tile.isSolid = true;
              break;
         case 85 :
-             tile = new Tile("spikes.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile = new Spikes("spikes.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
              tile.isSolid = true;
              break;
         case 86 :
@@ -470,7 +470,7 @@ public class TileFactory {
              tile.isSolid = true;
              break;
         case 115 :
-             tile = new Tile("signExit.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile = new Tile("boxCrate_double.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
              tile.isSolid = true;
              break;
         case 116 :
@@ -478,7 +478,7 @@ public class TileFactory {
              tile.isSolid = true;
              break;
         case 117 :
-             tile = new Tile("signRight.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile = new Door("doorClosed_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT, 117);
              tile.isSolid = false;
              break;
         case 118 :
@@ -580,6 +580,78 @@ public class TileFactory {
         case 143 :
              tile = new Tile("move.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
              tile.isSolid = true;
+             break;
+        case 144 :
+             tile = new Tile("sandLeft.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile.isSolid = true;
+             break;
+        case 145 :
+             tile = new Tile("sandMid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile.isSolid = true;
+             break;
+        case 146 :
+             tile = new Tile("sandRight.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile.isSolid = true;
+             break;
+        case 147 :
+             tile = new Tile("sandHalf_left.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile.isSolid = true;
+             break;
+        case 148 :
+             tile = new Tile("sandHalf_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile.isSolid = true;
+             break;
+        case 149 :
+             tile = new Tile("sandHalf_right.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile.isSolid = true;
+             break;
+        case 150 :
+             tile = new Tile("sandCenter.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile.isSolid = true;
+             break;
+        case 151 :
+             tile = new Tile("dirtLeft.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile.isSolid = true;
+             break;
+        case 152 :
+             tile = new Tile("dirtMid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile.isSolid = true;
+             break; 
+        case 153 :
+             tile = new Tile("dirtRight.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile.isSolid = true;
+             break;
+        case 154 :
+             tile = new Tile("dirtCenter.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile.isSolid = true;
+             break;
+        case 155 :
+             tile = new Tile("dirtHalf_left.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile.isSolid = true;
+             break;
+        case 156 :
+             tile = new Tile("dirtHalf_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile.isSolid = true;
+             break;
+        case 157 :
+             tile = new Tile("dirtHalf_right.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+             tile.isSolid = true;
+             break;
+              case 158 :
+             tile = new Door("doorClosed_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT, 54);
+             tile.isSolid = false;
+             break;
+              case 159 :
+             tile = new Door("doorClosed_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT, 54);
+             tile.isSolid = false;
+             break;
+              case 160 :
+             tile = new Door("doorClosed_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT, 54);
+             tile.isSolid = false;
+             break;
+              case 161 :
+             tile = new Door("doorClosed_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT, 54);
+             tile.isSolid = false;
              break;
         default:
              tile= new Tile ("grassMid.png",TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
