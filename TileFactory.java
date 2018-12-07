@@ -183,8 +183,8 @@ public class TileFactory {
              tile.isSolid = true;
              break;
         case 43 :
-             tile = new Tile("boxExplosive.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
-             tile.isSolid = true;
+             tile = new Door("doorClosed_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT, 43);
+             tile.isSolid = false;
              break;
         case 44 :
              tile = new Tile("boxExplosive_disabled.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);

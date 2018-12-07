@@ -19,5 +19,10 @@ setImage("playAgain.png");}
             Greenfoot.setWorld(new BeginScherm());
             
         }    
+         if(Greenfoot.mouseClicked(this)||Greenfoot.isKeyDown("space")){
+
+            Greenfoot.setWorld(new BeginScherm());
+            
+        }    
 
     }}

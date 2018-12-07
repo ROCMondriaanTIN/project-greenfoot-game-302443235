@@ -25,7 +25,6 @@ setImage("start.png");
        
             Greenfoot.setWorld(new MyWorld());
         
-   
-     
+
         }}
 }

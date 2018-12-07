@@ -46,6 +46,11 @@ public class Door extends Tile
                     Greenfoot.setWorld(l5);
                     break;
                 }
+                if (level == 43) {
+                    Finish fh = new Finish();
+                    Greenfoot.setWorld(fh);
+                    break;
+                }
             }
         }
      

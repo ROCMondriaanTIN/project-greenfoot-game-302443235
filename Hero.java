@@ -119,12 +119,14 @@ public class Hero extends Mover {
         for (Actor Lava : getIntersectingObjects(Lava.class)){
             if (Lava != null) {
                 getWorld().removeObject(this);
+                Greenfoot.setWorld(new EindScherm());
                 return;
             }
         }
         for (Actor Spikes : getIntersectingObjects(Spikes.class)){
             if (Spikes != null) {
                 getWorld().removeObject(this);
+                Greenfoot.setWorld(new EindScherm());
                 return;
             }
         }

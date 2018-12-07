@@ -15,7 +15,7 @@ public class BeginScherm extends World {
      */
     public BeginScherm() {
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(800, 600, 1, false);
+        super(1000, 800, 1, false);
         this.setBackground("startScreen.jpg");
 
         //startScreen();
@@ -58,6 +58,6 @@ public class BeginScherm extends World {
         addObject(startPlay,414,314);
         removeObject(startPlay);
         StartPlay startPlay2 = new StartPlay();
-        addObject(startPlay2,402,305);
+        addObject(startPlay2,810,670);
     }
 }
