@@ -92,6 +92,36 @@ public class Level4 extends World
         
         addObject(hero, 97, 2543);
         
+        addObject(new CoinGold(), 731, 2543);
+        addObject(new CoinGold(), 1148, 2543);
+        addObject(new CoinGold(), 1874, 1773);
+        addObject(new CoinGold(), 1037, 1773);
+        addObject(new CoinGold(), 540, 1773);
+        addObject(new CoinGold(), 3046, 1073);
+        addObject(new CoinGold(), 3790, 1493);
+        addObject(new CoinGold(), 5642, 1423);
+        addObject(new CoinGold(), 5549, 1921);
+        addObject(new CoinGold(), 5549, 2026);
+        addObject(new CoinGold(), 5130, 2123);
+        addObject(new CoinGold(), 4788, 2123);
+        addObject(new CoinGold(), 4383, 2613);
+        addObject(new CoinGold(), 5347, 2613);
+        addObject(new CoinGold(), 6786, 2613);
+        addObject(new CoinGold(), 7383, 1676);
+        addObject(new CoinGold(), 7383, 1773);
+        addObject(new CoinGold(), 7875, 2613);
+        addObject(new CoinGold(), 7383, 1676);
+        addObject(new CoinGold(), 9679, 2053);
+        
+        addObject(new LetterM(), 1583, 2543);
+        addObject(new LetterU(), 796, 1773);
+        addObject(new LetterS(), 3544, 1493);
+        addObject(new LetterH(), 5549, 1823);
+        addObject(new LetterR(), 5549, 2123);
+        addObject(new LetterO(), 6075, 2613);
+        addObject(new LetterO(), 7383, 1575);
+        addObject(new LetterM(), 9229, 2053);
+        
         // Force act zodat de camera op de juist plek staat.
         camera.act();
         hero.act();
@@ -116,6 +146,22 @@ public class Level4 extends World
      */
     private void prepare()
     {
+        
+         Key key = new Key();
+        addObject(key,470,470);
+        HudKey hudKey = new HudKey();
+        addObject(hudKey,35,100);
+       
+        HudCoin hudCoin = new HudCoin();
+        addObject(hudCoin,113,94);
+        HudNumber hudNumber = new HudNumber();
+        addObject(hudNumber,162,99);
+       
+        removeObject(hudNumber);
+        HudNumber2 hudNumber2 = new HudNumber2();
+        addObject(hudNumber2,157,96);
+        HudNumber hudNumber3 = new HudNumber();
+        addObject(hudNumber3,192,96);
     }
     
 

@@ -56,8 +56,6 @@ public class BeginScherm extends World {
 
         StartPlay startPlay = new StartPlay();
         addObject(startPlay,414,314);
-        removeObject(startPlay);
-        StartPlay startPlay2 = new StartPlay();
-        addObject(startPlay2,810,670);
+       
     }
 }

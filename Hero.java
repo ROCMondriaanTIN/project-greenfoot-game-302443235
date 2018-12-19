@@ -88,34 +88,48 @@ public class Hero extends Mover {
             if (enemy != null) {
                 getWorld().removeObject(this);
                 Greenfoot.setWorld(new EindScherm());
+                 HudNumber.score=0;
+                   HudNumber2.score2=0;
                 return;
             }
         }
         for (Actor LiquidWater : getIntersectingObjects(LiquidWater.class)){
             if (LiquidWater != null) {
                    getWorld().removeObject(this);
+                    HudNumber.score=0;
+                    HudNumber2.score2=0;
                 Greenfoot.setWorld(new EindScherm());
                 return;
             }
         }
-        for (Actor CoinGold : getIntersectingObjects(CoinGold.class)){
+        for (Actor CoinGold : getIntersectingObjects(CoinGold.class)) {
             if (CoinGold != null) {
-                getWorld().removeObject(CoinGold);
+               getWorld().removeObject(CoinGold);
+                HudNumber.score=HudNumber.score+1;
+              
+
                 return;
             }
         }
+    
         for (Actor Star : getIntersectingObjects(Star.class)){
             if (Star != null) {
                 getWorld().removeObject(Star);
                 return;
             }
         }
-        for (Actor Key : getIntersectingObjects(Key.class)){
+        
+                for (Actor Key : getIntersectingObjects(Key.class)) {
             if (Key != null) {
-                getWorld().removeObject(Key);
+               getWorld().removeObject(Key);
+                HudKey.key= HudKey.key+1;
+              
+           
+
                 return;
             }
         }
+       
         for (Actor Lava : getIntersectingObjects(Lava.class)){
             if (Lava != null) {
                 getWorld().removeObject(this);
@@ -130,6 +144,124 @@ public class Hero extends Mover {
                 return;
             }
         }
+        for (Actor LetterS : getIntersectingObjects(LetterS.class)){
+            if (LetterS != null) {
+                getWorld().removeObject(LetterS);
+                return;
+            }
+        }
+        for (Actor LetterC : getIntersectingObjects(LetterC.class)){
+            if (LetterC != null) {
+                getWorld().removeObject(LetterC);
+                return;
+            }
+        }
+        for (Actor LetterH : getIntersectingObjects(LetterH.class)){
+            if (LetterH != null) {
+                getWorld().removeObject(LetterH);
+                return;
+            }
+        }
+        for (Actor LetterO : getIntersectingObjects(LetterO.class)){
+            if (LetterO != null) {
+                getWorld().removeObject(LetterO);
+                return;
+            }
+        }
+        for (Actor LetterL : getIntersectingObjects(LetterL.class)){
+            if (LetterL != null) {
+                getWorld().removeObject(LetterL);
+                return;
+            }
+        }
+        for (Actor LetterA : getIntersectingObjects(LetterA.class)){
+            if (LetterA != null) {
+                getWorld().removeObject(LetterA);
+                return;
+            }
+        }
+        for (Actor LetterT : getIntersectingObjects(LetterT.class)){
+            if (LetterT != null) {
+                getWorld().removeObject(LetterT);
+                return;
+            }
+        }
+        for (Actor LetterE : getIntersectingObjects(LetterE.class)){
+            if (LetterE != null) {
+                getWorld().removeObject(LetterE);
+                return;
+            }
+        }
+        for (Actor LetterW : getIntersectingObjects(LetterW.class)){
+            if (LetterW != null) {
+                getWorld().removeObject(LetterW);
+                return;
+            }
+        }
+        for (Actor LetterR : getIntersectingObjects(LetterR.class)){
+            if (LetterR != null) {
+                getWorld().removeObject(LetterR);
+                return;
+            }
+        }
+        for (Actor LetterI : getIntersectingObjects(LetterI.class)){
+            if (LetterI != null) {
+                getWorld().removeObject(LetterI);
+                return;
+            }
+        }
+        for (Actor LetterN : getIntersectingObjects(LetterN.class)){
+            if (LetterN != null) {
+                getWorld().removeObject(LetterN);
+                return;
+            }
+        }
+        for (Actor LetterB : getIntersectingObjects(LetterB.class)){
+            if (LetterB != null) {
+                getWorld().removeObject(LetterB);
+                return;
+            }
+        }
+        for (Actor LetterM : getIntersectingObjects(LetterM.class)){
+            if (LetterM != null) {
+                getWorld().removeObject(LetterM);
+                return;
+            }
+        }
+        for (Actor LetterU : getIntersectingObjects(LetterU.class)){
+            if (LetterU != null) {
+                getWorld().removeObject(LetterU);
+                return;
+            }
+        }
+        for (Actor LetterZ : getIntersectingObjects(LetterZ.class)){
+            if (LetterZ != null) {
+                getWorld().removeObject(LetterZ);
+                return;
+            }
+        }
+        for (Actor LetterG : getIntersectingObjects(LetterG.class)){
+            if (LetterG != null) {
+                getWorld().removeObject(LetterG);
+                return;
+            }
+        }
+        
+     
+        
+        
+        
+        for (Actor DoorClosed : getIntersectingObjects(Door.class)) {
+            if (DoorClosed != null&&getWorld().getObjects(Key.class).size()==0) {
+                Greenfoot.setWorld(new Level3());
+             
+            
+                return;
+            }
+        }
+        
+       
+        
     }
     public String positie(){
         String k = "X" + getX() + " " + "Y" + getY();

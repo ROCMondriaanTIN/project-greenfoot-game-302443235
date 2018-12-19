@@ -89,6 +89,39 @@ public class Level3 extends World
         
         addObject(hero, 100, 2052);
         
+        addObject(new CoinGold(), 471, 2053);
+        addObject(new CoinGold(), 1662, 2053);
+        addObject(new CoinGold(), 2204, 1913);
+        addObject(new CoinGold(), 2689, 2683);
+        addObject(new CoinGold(), 2329, 2683);
+        addObject(new CoinGold(), 1983, 2683);
+        addObject(new CoinGold(), 1293, 2683);
+        addObject(new CoinGold(), 629, 2823);
+        addObject(new CoinGold(), 361, 3243);
+        addObject(new CoinGold(), 1195, 3243);
+        addObject(new CoinGold(), 2857, 3243);
+        addObject(new CoinGold(), 3132, 3243);
+        addObject(new CoinGold(), 3160, 2753);
+        addObject(new CoinGold(), 2791, 2333);
+        addObject(new CoinGold(), 2475, 2193);
+        addObject(new CoinGold(), 3711, 1563);
+        addObject(new CoinGold(), 4031, 1283);
+        addObject(new CoinGold(), 3950, 1283);
+        addObject(new CoinGold(), 3884, 1283);
+        addObject(new CoinGold(), 4701, 2193);
+        addObject(new CoinGold(), 5017, 2473);
+        addObject(new CoinGold(), 6054, 2473);
+        addObject(new CoinGold(), 6480, 2473);
+        addObject(new CoinGold(), 7064, 1703);
+        addObject(new CoinGold(), 7276, 1703);
+        
+        addObject(new LetterR(), 2684, 2480);
+        addObject(new LetterA(), 1644, 2683);
+        addObject(new LetterI(), 619, 3243);
+        addObject(new LetterN(), 3510, 3243);
+        addObject(new LetterB(), 4193, 1563);
+        addObject(new LetterO(), 4458, 2193);
+        addObject(new LetterW(), 6880, 2473);
         // Force act zodat de camera op de juist plek staat.
         camera.act();
         hero.act();
@@ -112,6 +145,20 @@ public class Level3 extends World
      */
     private void prepare()
     {
+ Key key = new Key();
+        addObject(key,470,470);
+        HudKey hudKey = new HudKey();
+        addObject(hudKey,35,100);
        
+        HudCoin hudCoin = new HudCoin();
+        addObject(hudCoin,113,94);
+        HudNumber hudNumber = new HudNumber();
+        addObject(hudNumber,162,99);
+       
+        removeObject(hudNumber);
+        HudNumber2 hudNumber2 = new HudNumber2();
+        addObject(hudNumber2,157,96);
+        HudNumber hudNumber3 = new HudNumber();
+        addObject(hudNumber3,192,96);
     }
 }
