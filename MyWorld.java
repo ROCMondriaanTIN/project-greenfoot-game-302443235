@@ -130,24 +130,25 @@ public class MyWorld extends World {
         addObject(new CoinGold(), 15830, 570);
         addObject(new CoinGold(), 16150, 570);
         addObject(new CoinGold(), 16900, 500);
+        addObject(new CoinGold(), 1209, 1353);
+        addObject(new CoinGold(), 8900, 850);
+        addObject(new CoinGold(), 13920, 550);
         
         addObject(new LetterC(), 3600, 1400);
         addObject(new LetterH(), 5280, 930);
         addObject(new LetterO(), 7500, 1270);
-        addObject(new LetterC(), 9550, 930);
-        addObject(new LetterO(), 11530, 1050);
+        addObject(new LetterA(), 9550, 930);
         addObject(new LetterL(), 12950, 1050);
-        addObject(new LetterA(), 14050, 430);
+        
+        
+        
+        
+       
         addObject(new LetterT(), 14930, 650);
         addObject(new LetterE(), 16680, 570);
         
-        addObject(new Key(), 11930, 1070);
-        
            
-            Star star = new Star();
-        addObject( star, 1209, 1353);
-        addObject(new Star(), 8900, 850);
-        addObject(new Star(), 13920, 550);
+           
         
         // Force act zodat de camera op de juist plek staat.
         camera.act();
@@ -172,10 +173,33 @@ public class MyWorld extends World {
      */
     private void prepare()
     {
+        
         Key key = new Key();
-        addObject(key,470,470);
+        addObject(key,470,400);
+        
         HudKey hudKey = new HudKey();
         addObject(hudKey,35,100);
+        
+        
+        HudLetterC hudLetterC = new HudLetterC();
+        addObject(hudLetterC,300,100);
+        HudLetterH hudLetterH = new HudLetterH();
+        addObject(hudLetterH,375,100);
+        HudLetterO hudLetterO = new HudLetterO();
+        addObject(hudLetterO,450,100);
+        HudLetterC hudLetterC1 = new HudLetterC();
+        addObject(hudLetterC1,525,100);
+        HudLetterO hudLetterO1 = new HudLetterO();
+        addObject(hudLetterO1,600,100);
+        HudLetterL hudLetterL = new HudLetterL();
+        addObject(hudLetterL,675,100);
+        HudLetterA hudLetterA = new HudLetterA();
+        addObject(hudLetterA,750,100);
+        HudLetterT hudLetterT = new HudLetterT();
+        addObject(hudLetterT,825,100);
+        HudLetterE hudLetterE = new HudLetterE();
+        addObject(hudLetterE,900,100);
+        
        
         HudCoin hudCoin = new HudCoin();
         addObject(hudCoin,113,94);

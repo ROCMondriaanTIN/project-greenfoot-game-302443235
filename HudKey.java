@@ -16,11 +16,11 @@ public static int key;
     
     public void FillKey(){
         if(getWorld().getObjects(Key.class).size()==0){
-            setImage("hud_keyRed.png");
+            setImage("keyBlue1.png");
     
-}
+        }
 
-            if(HudKey.key==1){
+        if(HudKey.key==1){
             setImage("keyBlue.png");
             }
 }

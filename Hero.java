@@ -99,6 +99,7 @@ public class Hero extends Mover {
                     HudNumber.score=0;
                     HudNumber2.score2=0;
                 Greenfoot.setWorld(new EindScherm());
+             
                 return;
             }
         }
@@ -119,7 +120,7 @@ public class Hero extends Mover {
             }
         }
         
-                for (Actor Key : getIntersectingObjects(Key.class)) {
+        for (Actor Key : getIntersectingObjects(Key.class)) {
             if (Key != null) {
                getWorld().removeObject(Key);
                 HudKey.key= HudKey.key+1;
@@ -153,42 +154,53 @@ public class Hero extends Mover {
         for (Actor LetterC : getIntersectingObjects(LetterC.class)){
             if (LetterC != null) {
                 getWorld().removeObject(LetterC);
+                HudLetterC.letterC= HudLetterC.letterC+1;
                 return;
             }
         }
         for (Actor LetterH : getIntersectingObjects(LetterH.class)){
             if (LetterH != null) {
                 getWorld().removeObject(LetterH);
+                HudLetterH.letterH= HudLetterH.letterH+1;
+                
                 return;
             }
         }
         for (Actor LetterO : getIntersectingObjects(LetterO.class)){
             if (LetterO != null) {
                 getWorld().removeObject(LetterO);
+                HudLetterO.letterO= HudLetterO.letterO+1;
+                
                 return;
             }
         }
         for (Actor LetterL : getIntersectingObjects(LetterL.class)){
             if (LetterL != null) {
                 getWorld().removeObject(LetterL);
+                HudLetterL.letterL= HudLetterL.letterL+1;
                 return;
             }
         }
         for (Actor LetterA : getIntersectingObjects(LetterA.class)){
             if (LetterA != null) {
                 getWorld().removeObject(LetterA);
+   
+                HudLetterA.letterA= HudLetterA.letterA+1;
+              
                 return;
             }
         }
         for (Actor LetterT : getIntersectingObjects(LetterT.class)){
             if (LetterT != null) {
                 getWorld().removeObject(LetterT);
+                HudLetterT.letterT= HudLetterT.letterT+1;
                 return;
             }
         }
         for (Actor LetterE : getIntersectingObjects(LetterE.class)){
             if (LetterE != null) {
                 getWorld().removeObject(LetterE);
+                HudLetterE.letterE= HudLetterE.letterE+1;
                 return;
             }
         }
