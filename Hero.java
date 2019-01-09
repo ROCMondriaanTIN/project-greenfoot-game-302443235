@@ -90,6 +90,7 @@ public class Hero extends Mover {
                 Greenfoot.setWorld(new EindScherm());
                  HudNumber.score=0;
                    HudNumber2.score2=0;
+                  
                 return;
             }
         }
@@ -98,6 +99,7 @@ public class Hero extends Mover {
                    getWorld().removeObject(this);
                     HudNumber.score=0;
                     HudNumber2.score2=0;
+                    
                 Greenfoot.setWorld(new EindScherm());
              
                 return;
@@ -124,9 +126,6 @@ public class Hero extends Mover {
             if (Key != null) {
                getWorld().removeObject(Key);
                 HudKey.key= HudKey.key+1;
-              
-           
-
                 return;
             }
         }
