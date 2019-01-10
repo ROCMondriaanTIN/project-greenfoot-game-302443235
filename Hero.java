@@ -9,6 +9,7 @@ public class Hero extends Mover {
 
     public boolean left=true;
     public boolean mirror=true;
+    public boolean key=false;
     private  double gravity;
     private  double acc;
     private  double drag;
@@ -18,7 +19,7 @@ public class Hero extends Mover {
     int loop = 0;
     int duck = 0;
     int karakterKleur=1;
-    public int keyYellow =0;
+    
     public Hero() {
         super();
         gravity = 9.8;
@@ -77,6 +78,8 @@ public class Hero extends Mover {
     public void act() {
         handleInput();
         
+        Yellowkey();
+        
         velocityX *= drag;
         velocityY += acc;
         if (velocityY > gravity) {
@@ -122,13 +125,10 @@ public class Hero extends Mover {
             }
         }
         
-        for (Actor Key : getIntersectingObjects(Key.class)) {
-            if (Key != null) {
-               getWorld().removeObject(Key);
-                HudKey.key= HudKey.key+1;
-                return;
-            }
-        }
+        
+        
+           
+        
        
         for (Actor Lava : getIntersectingObjects(Lava.class)){
             if (Lava != null) {
@@ -258,22 +258,24 @@ public class Hero extends Mover {
             }
         }
         
-     
-        
-        
-        
-        for (Actor DoorClosed : getIntersectingObjects(Door.class)) {
-            if (DoorClosed != null&&getWorld().getObjects(Key.class).size()==0) {
-                Greenfoot.setWorld(new Level3());
-             
-            
-                return;
+        for (Actor DoorClosed : getIntersectingObjects(Doortile.class)) {
+            if (key==true){
+                Greenfoot.setWorld(new Level2());
             }
         }
-        
-       
+     
+
         
     }
+    public boolean Yellowkey(){
+    
+        if (isTouching (Key.class)){
+                removeTouching(Key.class);
+                key = true;
+                
+            }return key;
+        }
+    
     public String positie(){
         String k = "X" + getX() + " " + "Y" + getY();
         return k;

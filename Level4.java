@@ -120,7 +120,7 @@ public class Level4 extends World
         addObject(new LetterR(), 5549, 2123);
         addObject(new LetterO(), 6075, 2613);
         addObject(new LetterO(), 7383, 1575);
-        addObject(new LetterM(), 9229, 2053);
+        
         
         // Force act zodat de camera op de juist plek staat.
         camera.act();
@@ -147,10 +147,29 @@ public class Level4 extends World
     private void prepare()
     {
         
-         Key key = new Key();
-        addObject(key,470,470);
+        Key key = new Key();
+        addObject(key,270,420);
         HudKey hudKey = new HudKey();
         addObject(hudKey,35,100);
+        
+        HudLetterM hudLetterM = new HudLetterM();
+        addObject(hudLetterM,300,100);
+        HudLetterU hudLetterU = new HudLetterU();
+        addObject(hudLetterU,375,100);
+        HudLetterS hudLetterS = new HudLetterS();
+        addObject(hudLetterS,450,100);
+        HudLetterH hudLetterH = new HudLetterH();
+        addObject(hudLetterH,525,100);
+        HudLetterR hudLetterR = new HudLetterR();
+        addObject(hudLetterR,600,100);
+        HudLetterO hudLetterO = new HudLetterO();
+        addObject(hudLetterO,675,100);
+        HudLetterO hudLetterO1 = new HudLetterO();
+        addObject(hudLetterO1,750,100);
+        HudLetterM hudLetterM1 = new HudLetterM();
+        addObject(hudLetterM1,825,100);
+        
+        
        
         HudCoin hudCoin = new HudCoin();
         addObject(hudCoin,113,94);

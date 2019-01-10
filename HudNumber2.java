@@ -31,6 +31,9 @@ public class HudNumber2 extends HudNumber
         if (score2==0){
             setImage("hud_0.png");
         }
+        if (score2>=20){
+            setImage("hud_2.png");
+        }
 }
 }
 

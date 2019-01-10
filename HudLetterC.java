@@ -19,10 +19,6 @@ public class HudLetterC extends Mover
             setImage("letterC1.png");
     
        }
-
-       if(HudLetterC.letterC==1){
-            setImage("letterC.png");
-       }
      
-}
+    }
 }

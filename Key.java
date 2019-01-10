@@ -14,6 +14,7 @@ public class Key extends Mover
      */
     public void act() 
     {
+        applyVelocity();
         // Add your action code here.
     }    
 }

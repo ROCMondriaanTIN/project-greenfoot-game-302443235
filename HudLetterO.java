@@ -20,8 +20,5 @@ public class HudLetterO extends Mover
     
        }
 
-       if(HudLetterO.letterO==1){
-            setImage("letterO.png");
-       }
     }    
 }
