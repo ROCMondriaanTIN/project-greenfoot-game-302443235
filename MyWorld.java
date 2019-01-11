@@ -97,8 +97,7 @@ public class MyWorld extends World {
         addObject(new CoinGold(), 12650, 850);
         addObject(new CoinGold(), 13200, 850);
         addObject(new CoinGold(), 13550, 700);
-        addObject(new CoinGold(), 14550, 570);
-        addObject(new CoinGold(), 15300, 570);
+    
         
         
         
